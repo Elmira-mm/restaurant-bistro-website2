@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fdfdfd;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "left main right"
+    "extra extra extra"
+    "footer footer footer";
+  grid-template-columns: 200px 1fr 200px;
+  gap: 10px;
+  padding: 10px;
+}
+
+.block {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #fff;
+}
+
+.block1 { grid-area: header; background: #dbeafe; position: relative; }
+.block2 { grid-area: left; background: #fef9c3; }
+.block3 { grid-area: main; background: #fff; }
+.block4 { grid-area: right; background: #fde68a; }
+.block5 { grid-area: extra; background: #f0fdf4; }
+.block6 { grid-area: footer; background: #dbeafe; text-align: center; }
+
+nav ul {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  margin: 10px 0 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #d62828;
+}
+
+.homeDishImg {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.slogan {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #1e40af;
+  font-style: italic;
+}
+
+.motto {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #334155;
+  margin-bottom: 10px;
+}
