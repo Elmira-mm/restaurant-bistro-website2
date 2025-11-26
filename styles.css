@@ -5,16 +5,17 @@ body {
 }
 
 .container {
-    display: grid;
-    grid-template-areas:
-        "header header header"
-        "sidebar-left main sidebar-right"
-        "sidebar-left extra sidebar-right"
-        "footer footer footer";
-    grid-template-columns: 200px 1fr 200px;
-    grid-template-rows: auto 1fr auto auto;
-    gap: 10px;
-    padding: 10px;
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "sidebar-left main sidebar-right"
+    "extra main sidebar-right"
+    "footer footer sidebar-right";
+  grid-template-columns: 200px 1fr 200px;
+  grid-template-rows: auto 1fr 1fr auto;
+  gap: 10px;
+  padding: 10px;
+  min-width: 1200px;
 }
 
 .block {

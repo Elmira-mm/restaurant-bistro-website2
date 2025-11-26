@@ -9,6 +9,7 @@ body {
   flex-direction: column;
   gap: 10px;
   padding: 10px;
+  min-width: 1200px;
 }
 
 .block {
@@ -18,6 +19,7 @@ body {
   background: #fff;
 }
 
+/* HEADER */
 .block1 {
   background: #dbeafe;
   position: relative;
@@ -28,17 +30,19 @@ body {
   top: 15px;
   right: 20px;
   font-size: 1.2rem;
-  font-weight: bold;
   color: #1e40af;
   font-style: italic;
+  font-weight: bold;
 }
 
+/* NAVIGATION */
 nav ul {
   display: flex;
+  flex-wrap: wrap;
   gap: 15px;
   list-style: none;
-  margin: 10px 0 0;
   padding: 0;
+  margin: 15px 0 0;
 }
 
 nav a {
@@ -51,46 +55,65 @@ nav a:hover {
   color: #d62828;
 }
 
+/* === MIDDLE 3-COLUMN FLEX LAYOUT === */
 .middle {
   display: flex;
+  gap: 10px;
+  min-height: 500px;
+}
+
+/* LEFT COLUMN: block2 + block5 */
+.left-column {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
   gap: 10px;
 }
 
 .block2 {
-  flex: 1;
   background: #fef9c3;
-}
-
-.block3 {
-  flex: 2;
-  background: #fff;
-}
-
-.block4 {
-  flex: 1;
-  background: #fde68a;
 }
 
 .block5 {
   background: #f0fdf4;
+  flex: 1;
 }
 
+/* CENTER COLUMN */
+.block3 {
+  flex: 1;
+  background: #fff;
+}
+
+/* RIGHT COLUMN:  */
+.right-column {
+  display: flex;
+  width: 200px;
+}
+
+.block4 {
+  background: #fde68a;
+  flex: 1;
+}
+
+/* FOOTER */
 .block6 {
   background: #dbeafe;
   text-align: center;
 }
 
+.motto {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Image styling */
 .homeDishImg {
   width: 150px;
   height: 150px;
   object-fit: cover;
+  margin-top: 10px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-}
-
-.motto {
-  font-size: 1.1rem;
-  font-weight: bold;
-  color: #334155;
-  margin-bottom: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
